@@ -1,0 +1,26 @@
+{
+  "dark-mode": {
+    "key": "AppleInterfaceStyle",
+    "notification-name": "AppleInterfaceThemeChangedNotification"
+  },
+  "appearance-color": {
+    "key": "AppleAquaColorVariant",
+    "notification-name": "AppleAquaColorVariantChanged"
+  },
+  "highlight-color": {
+    "key": "AppleHighlightColor",
+    "notification-name": "AppleColorPreferencesChangedNotification"
+  },
+  "sidebar-icon-size": {
+    "key": "NSTableViewDefaultSizeMode",
+    "notification-name": "AppleSideBarDefaultIconSizeChanged"
+  },
+  "show-scrollbars": {
+    "key": "AppleShowScrollBars",
+    "notification-name": "AppleShowScrollBarsSettingChanged"
+  },
+  "click-scrollbars": {
+    "key": "AppleScrollerPagingBehaviour",
+    "notification-name": "AppleNoRedisplayAppearancePreferenceChanged"
+  }
+}
