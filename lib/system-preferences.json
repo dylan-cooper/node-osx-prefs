@@ -15,12 +15,12 @@
     "key": "NSTableViewDefaultSizeMode",
     "notification-name": "AppleSideBarDefaultIconSizeChanged"
   },
-  "show-scrollbars": {
+  "scrollbar-visibility": {
     "key": "AppleShowScrollBars",
     "notification-name": "AppleShowScrollBarsSettingChanged"
   },
-  "click-scrollbars": {
-    "key": "AppleScrollerPagingBehaviour",
+  "scrollbar-paging": {
+    "key": "AppleScrollerPagingBehavior",
     "notification-name": "AppleNoRedisplayAppearancePreferenceChanged"
   }
 }
