@@ -1,0 +1,13 @@
+{
+  "name": "electron-test",
+  "version": "0.0.0",
+  "description": "A small demo application to show the system preferences API",
+  "main": "index.js",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.9"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Dylan Cooper"
+}

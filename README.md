@@ -1,4 +1,4 @@
-# node-osx-prefs [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# node-osx-prefs 
 > Node API for some of OSX System Preferences
 
 ## Installation
@@ -12,16 +12,73 @@ $ npm install --save node-osx-prefs
 ```js
 var nodeOsxPrefs = require('node-osx-prefs');
 
-nodeOsxPrefs('Rainbow');
+nodeOsxPrefs.isDarkMode(); 
+nodeOsxPrefs.getAppearanceColor();
+nodeOsxPrefs.getHighlightColor();
+nodeOsxPrefs.getSidebarIconSize();
+nodeOsxPrefs.getScrollbarVisibility();
+nodeOsxPrefs.isScrollbarPaging();
+
 ```
+
+## API
+
+### isDarkMode()
+
+Returns a boolean value; true if the system is in dark mode, false if the system is not in dark mode.
+
+### getAppearanceColor()
+
+Returns a string value, 'Blue' if the system appearance color is blue, 'Graphite' if the system appearance color is graphite.
+
+### getHighlightColor()
+
+Returns an array of three integers between 0 and 255 corresponding to the RGB values of the system's highlight color.
+
+### getSidebarIconSize()
+
+Returns a string value, either 'Small', 'Medium' or 'Large'.
+
+### getScrollbarVisibility()
+
+Returns a string value, either 'Automatic', 'Always' or 'WhenScrolling' depending on the user's system preference.
+
+### isScrollbarPaging()
+
+Returns a boolean value, true if the clicking the scrollbar is meant to go to the next page, false if clicking the scrollbar is meant to skip to that section.
+
+## Building
+
+Building the library:
+
+```sh
+$ npm install
+```
+
+## Electron Demo/Test App
+
+Building and running the electron test app:
+
+```sh
+$ cd electron-test
+$ npm install
+```
+
+```sh
+$ npm run start
+```
+
+Here are some screenshots of what the application looks like.  Whether dark mode is enabled is the only setting that affects the appearance here, the other settings are just listed.
+
+If dark mode is enabled:
+
+![](media/screenshot-dark.png)
+
+If dark mode is not enabled:
+
+![](media/screenshot.png)
+
 ## License
 
 MIT © [Dylan Cooper]()
 
-
-[npm-image]: https://badge.fury.io/js/node-osx-prefs.svg
-[npm-url]: https://npmjs.org/package/node-osx-prefs
-[travis-image]: https://travis-ci.org/dylan-cooper/node-osx-prefs.svg?branch=master
-[travis-url]: https://travis-ci.org/dylan-cooper/node-osx-prefs
-[daviddm-image]: https://david-dm.org/dylan-cooper/node-osx-prefs.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/dylan-cooper/node-osx-prefs

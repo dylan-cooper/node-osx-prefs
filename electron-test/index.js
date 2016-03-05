@@ -8,19 +8,3 @@ app.on('ready', function(){
     });
     mainWindow.loadURL('file://' + __dirname + '/index.html');
 });
-
-console.log('Hello');
-/*
-var prefs = require('..');
-
-console.log(prefs.isDarkMode());
-
-prefs.on('dark-mode-change', function(mode){
-    if (mode == 'on'){
-        console.log('Dark!!!!');
-    } else {
-        console.log('Light!!!');
-    }
-    //jQuery('#current-mode').append('<p>Dark Mode</p>');
-});
-*/
