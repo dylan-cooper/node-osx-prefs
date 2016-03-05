@@ -24,7 +24,10 @@
   },
   "repository": "dylan-cooper/node-osx-prefs",
   "scripts": {
-    "test": "node test.js"
+    "test": "mocha test.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
 }
