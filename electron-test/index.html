@@ -1,12 +1,14 @@
 <html>
     <head>
         <title>Electron Trial Program 1</title>
+        <link rel="stylesheet" type="text/css" href="browser.css">
     </head>
     <body>
         <div>
-            <h2>Dark Mode API</h2>
-            <div id="current-mode"></div>
-            <script src="dark-mode-checker.js"></script>
+            <h2>System Preferences API</h2>
+            <div id="contents"></div>
+            <script src="preference-responder.js"></script>
+            <button onclick="checkPrefs()">Check System Preferences Again</button> 
         </div>
     </body>
 </html>
